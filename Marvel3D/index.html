@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D image</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d2d2d2;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          );
+      }
+
+      body::before {
+        position: absolute;
+        width: min(1400px, 90vw);
+        top: 0%;
+        left: 50%;
+        height: 90%;
+        
+        transform: translateX(-50%);
+        content: "";
+        background-image: url("images/Poster2.jpeg");
+        background-size: 100%;
+        width: 100vw;
+        /* height: 100vh; */
+        background-repeat: no-repeat;
+        background-position: top;
+        pointer-events: none;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner" style="--quantity: 10">
+      <div class="slider">
+        <div class="item" style="--position: 1">
+          <img src="marvelSup/AntMan.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="marvelSup/HawkEYE.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="marvelSup/BlackWidow.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="marvelSup/CapAmerica.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="marvelSup/DrStrange.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="marvelSup/Hulk.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="marvelSup/IronMan.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="marvelSup/SpiderMan.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="marvelSup/Thor.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="marvelSup/witch.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <h1 data-content="Marvel">
+          Marvel
+        </h1>
+        <div class="author">
+          <hr>
+          <h2>SWE: Anas </h2>
+          <p><b>Design only using css and html</b></p>
+
+        </div>
+        <div class="model"></div>
+      </div>
+    </div>
+  </body>
+</html>
